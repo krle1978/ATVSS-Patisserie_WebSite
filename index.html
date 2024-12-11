@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem za naručivanje kolača</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem za naručivanje kolača</h1>
+        <div class="form-section">
+            <h2>Kreirajte svoj kolač</h2>
+            <label for="kolac-name">Ime kolača:</label>
+            <input type="text" id="kolac-name" placeholder="Unesite ime kolača">
+
+            <label for="osnovne-kalorije">Osnovne kalorije:</label>
+            <input type="number" id="osnovne-kalorije" placeholder="Unesite osnovne kalorije">
+
+            <label for="osnovna-cena">Osnovna cena (RSD):</label>
+            <input type="number" id="osnovna-cena" placeholder="Unesite osnovnu cenu">
+
+            <h3>Dodajte sastojke:</h3>
+            <label for="sastojak-name">Naziv sastojka:</label>
+            <input type="text" id="sastojak-name" placeholder="Unesite naziv sastojka">
+
+            <label for="kalorije">Kalorije:</label>
+            <input type="number" id="kalorije" placeholder="Unesite kalorije">
+
+            <label for="cena">Cena (RSD):</label>
+            <input type="number" id="cena" placeholder="Unesite cenu">
+
+            <button id="dodaj-sastojak">Dodaj sastojak</button>
+            <ul id="sastojci-lista"></ul>
+
+            <button id="kreiraj-kolac">Kreiraj kolač</button>
+        </div>
+
+        <div class="order-section">
+            <h2>Porudžbina</h2>
+            <ul id="porudzbina-lista"></ul>
+            <button id="obracun-cena">Obračunaj ukupnu cenu</button>
+            <button id="obracun-kalorije">Obračunaj ukupne kalorije</button>
+            <div id="rezultat"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
